@@ -1,140 +1,55 @@
-## PRT-YYYY-NNN — [Project Title]
-### GableGrid Portfolio Project
+Tableau + Snowflake Sales Analytics Dashboard
+PRT-2026-004
+Tableau + Snowflake Sales Analytics Dashboard
+Setup Guide
+Built by Mefta Mondol at GableGrid
+gablegrid.com
+================================================
 
+PAGE 1 — PROJECT OVERVIEW
+--------------------------
+Project: Tableau + Snowflake Sales Analytics Dashboard
+Built by: Mefta Mondol at GableGrid
+Tools: Snowflake, Tableau Desktop, SQL
+Data: Superstore dummy dataset
 
+Dashboard
+✅ Monthly Sales Trend
+✅ Top 10 Products
+✅ Regional Sales Map
+✅ KPI Cards
+✅ Month-over-Month Growth %
 
-![Dashboard Preview](screenshots/preview.png)
+PAGE 2 — SNOWFLAKE CONNECTION
+------------------------------
+Step 1: Tableau Desktop খোলো
+Step 2: Connect → Snowflake click 
+Step 3:  credentials: 
+   Account: [ snowflake account]
+  -Username: [MeftagableGrid]
+  -Password: [Mafta525798@#&]
+Step 4: Database: GABLEGRID_DEMO select
+Step 5: Schema: SALES select
+Step 6: Three View select
+  - V_MONTHLY_SALES
+  - V_PRODUCTS
+  - V_CUSTOMERS
 
-## Overview
-[What business problem this solves — 2-3 sentences]
+PAGE 3 — DASHBOARD GUIDE
+--------------------------
+Filters:
+📅 Date    → Month/Year Filter
+🌍 Region  → East/West/Central/South
+📦 Category → Furniture/Technology/Office
+👥 Segment → Consumer/Corporate/Home Office
 
-## Features
-- ✅ [Feature 1]
-- ✅ [Feature 2]
-- ✅ [Feature 3]
-- ✅ [Feature 4]
+KPI Cards:
+💰 Total Revenue    
+📦 Total Quantity 
+📊 Profit Margin % 
+🏷️ Avg Discount  
 
-## Tech Stack
-| Tool | Purpose |
-|------|---------|
-| [Tool 1] | [What it does] |
-| [Tool 2] | [What it does] |
+================================================
+Built by Mefta Mondol at GableGrid
+gablegrid.com | hello@gablegrid.com
 
-## Setup & Run
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-## Screenshots
-![Screen 1](screenshots/screen1.png)
-![Screen 2](screenshots/screen2.png)
-
-## Live Demo
-[Link if available — or "Available on request"]
-
-## Built By
-[Developer Name] — [email@gablegrid.com]
-
----
-🏢 **GableGrid** — Business Intelligence & 
-Automation Agency  
-🌐 gablegrid.com | 📧 hello@gablegrid.com  
-📍 Dhaka, Bangladesh  
-⭐ Top Rated on Upwork | 100% Job Success Score
-```
-
----
-
-**.gitignore**
-```
-# Credentials
-*.env
-*.key
-credentials.json
-secrets.*
-
-# Real data — use dummy data only in portfolio
-/data/real/
-client_data.*
-
-# Python
-__pycache__/
-*.pyc
-venv/
-
-# Node
-node_modules/
-
-# OS
-.DS_Store
-Thumbs.db
-```
-
----
-
-**Folder structure:**
-```
-/src/.gitkeep
-/docs/.gitkeep
-/data/.gitkeep          ← Dummy data only
-/screenshots/.gitkeep   ← Portfolio images
-/deliverables/.gitkeep
-```
-
----
-
-## How to Create Both — Step by Step
-
-### Step 1 — Create Client Template Repo
-```
-github.com/GableGrid
-→ New repository
-→ Name: gablegrid-template-client-job
-→ Private ✅
-→ Add README ✅
-→ Create repository
-```
-
-### Step 2 — Add All Files
-```
-Inside the repo:
-→ Edit README.md → paste template above
-→ Add file → .gitignore → paste content
-→ Add file → src/.gitkeep → empty
-→ Add file → docs/.gitkeep → empty
-→ Add file → data/.gitkeep → empty
-→ Add file → deliverables/.gitkeep → empty
-```
-
-### Step 3 — Mark as Template
-```
-Settings → scroll down
-→ ✅ Template repository
-→ Save
-```
-
-### Step 4 — Repeat for Portfolio Template
-```
-Name: gablegrid-template-portfolio
-→ Public ✅
-→ Same process
-→ Add screenshots folder too
-→ Mark as template ✅
-```
-
----
-
-## How to Use Template for Every New Job
-```
-New repository
-→ Repository template dropdown
-→ Select: gablegrid-template-client-job
-→ Name: prj-2025-004-powerbi-sales
-→ Private
-→ Create ✅
-
-Instantly ready:
-✅ README with structure
-✅ .gitignore configured
-✅ All 4 folders ready
-✅ Zero setup time
