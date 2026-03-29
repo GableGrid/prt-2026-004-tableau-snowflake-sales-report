@@ -1,0 +1,75 @@
+-- ================================================
+-- GableGrid | PRT-2026-003
+-- Snowflake SQL Views
+-- Built by Mefta Mondol at GableGrid
+-- gablegrid.com
+-- ================================================
+
+-- View 1: Monthly Sales
+CREATE VIEW GABLEGRID_DEMO.SALES.V_MONTHLY_SALES AS
+SELECT
+  DATE_TRUNC('month', ORDER_DATE) AS MONTH,
+  REGION,
+  CATEGORY,
+  SUM(SALES) AS REVENUE,
+  COUNT(DISTINCT ORDER_ID) AS ORDERS,
+  SUM(PROFIT) AS PROFIT
+FROM GABLEGRID_DEMO.SALES.SUPERSTORE
+GROUP BY 1, 2, 3;
+
+-- View 2: Product Performance
+CREATE VIEW GABLEGRID_DEMO.SALES.V_PRODUCTS AS
+SELECT
+  PRODUCT_NAME,
+  CATEGORY,
+  SUB_CATEGORY,
+  SUM(SALES) AS REVENUE,
+  SUM(QUANTITY) AS UNITS_SOLD,
+  SUM(PROFIT) AS PROFIT
+FROM GABLEGRID_DEMO.SALES.SUPERSTORE
+GROUP BY 1, 2, 3;
+
+-- View 3: Customer Segments
+CREATE VIEW GABLEGRID_DEMO.SALES.V_CUSTOMERS AS
+SELECT
+  SEGMENT,
+  REGION,
+  STATE,
+  COUNT(DISTINCT CUSTOMER_ID) AS CUSTOMERS,
+  SUM(SALES) AS REVENUE
+FROM GABLEGRID_DEMO.SALES.SUPERSTORE
+GROUP BY 1, 2, 3;
+```
+
+---
+
+### ✅ Step 3 — File Save করো
+```
+File → Save As
+```
+
+File name:
+```
+snowflake-views.sql
+```
+
+Save করো এখানে:
+```
+prt-2026-004/src/snowflake-views.sql
+```
+
+---
+
+### ✅ Step 4 — GitHub-এ Upload করো
+
+GitHub-এ **src** folder-এ যাও → **Add file** → **Upload files**
+
+**snowflake-views.sql** file select করো → **Commit changes** click করো ✅
+
+---
+
+## শেষে src folder এরকম দেখাবে 👇
+```
+src/
+├── Dashboard.twbx ✅
+└── snowflake-views.sql ✅
