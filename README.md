@@ -40,7 +40,7 @@ Screenshots
 [Map](screenshots/regional-map.png)
 [Products](screenshots/products-chart.png)
 
-Video Walkthrough
+ Youtub Video Walkthrough
 https://youtu.be/T_B8xZa8TWM?si=adHx_MNVaKHfcci8
 
 Repo Structure
