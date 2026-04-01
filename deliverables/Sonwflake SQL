@@ -43,7 +43,7 @@ GROUP BY 1, 2, 3;
 
 ---
 
-### ✅ Step 3 — File Save করো
+### ✅ Step 3 — File Save 
 ```
 File → Save As
 ```
@@ -53,22 +53,19 @@ File name:
 snowflake-views.sql
 ```
 
-Save করো এখানে:
+Save
 ```
 prt-2026-004/src/snowflake-views.sql
 ```
 
 ---
 
-### ✅ Step 4 — GitHub-এ Upload করো
+### ✅ Step 4 — GitHub-এ Upload
 
-GitHub-এ **src** folder-এ যাও → **Add file** → **Upload files**
+GitHub- **src** folder- → **Add file** → **Upload files**
 
-**snowflake-views.sql** file select করো → **Commit changes** click করো ✅
+**snowflake-views.sql** file select → **Commit changes** click 
 
----
-
-## শেষে src folder এরকম দেখাবে 👇
 ```
 src/
 ├── Dashboard.twbx ✅
